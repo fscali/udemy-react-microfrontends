@@ -3,7 +3,7 @@ name: deploy-container-new
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - 'mfp/packages/container/**'
 
