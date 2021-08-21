@@ -27,3 +27,9 @@ This will occur all the time if we have some kind of sidebar nav that is build a
 
 - Each app might be using a completely different navigation framework
 - We might swap out or upgrade navigation libraries all the time - should'n require a rewrite of the rest of the app
+
+## Notes
+
+The most common pattern in microfrontends is to use browser history in the container and memory history in the hosted apps.
+This is done because otherwise there would conflicts in handling the address bar url
+between container and the microfrontends.
